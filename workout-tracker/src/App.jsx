@@ -1,7 +1,12 @@
+import NavBar from './layout/NavBar/NavBar';
+
 function App() {
   return (
-    <div className="App">
-      <p>This is how it begins</p>
+    <div>
+      <NavBar />
+      <div className="ml-64">
+        <p>This is how it begins</p>
+      </div>
     </div>
   );
 }
