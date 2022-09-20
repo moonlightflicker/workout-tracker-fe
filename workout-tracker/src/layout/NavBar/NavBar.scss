@@ -1,3 +1,20 @@
 .NavBar {
     background-color: #FBBF24;
 }
+
+.ItemContainer {
+    height: calc(100vh - 5.5rem + 1px);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: .3125rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: black;
+}
