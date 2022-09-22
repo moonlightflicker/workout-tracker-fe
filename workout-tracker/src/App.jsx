@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <div className="ml-64">
+      <div className="ml-16">
         <p>This is how it begins</p>
       </div>
     </div>
