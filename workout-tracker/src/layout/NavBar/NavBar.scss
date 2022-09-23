@@ -1,25 +1,35 @@
-.NavBar {
+$navbar-width: 64px;
+$navbar-width-expanded: 256px;
+$logo-icon-width: 44px;
+$logo-width: 206px;
+
+.navbar {
     background-color: #FBBF24;
+    width: $navbar-width;
 }
 
-.ItemContainer {
+.navbar:hover {
+    width: $navbar-width-expanded;
+
+    .logo-container {
+        width: 206px;
+        transition: width 300ms ease-in;
+    }
+}
+
+.item-container {
     height: calc(100vh - 5.5rem + 1px);
 }
 
-.fade-in {
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 300ms;
+.logo-container {
+    width: $logo-icon-width;
+    margin-left: calc(($navbar-width - $logo-icon-width)/2);
 }
 
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+.logo {
+    display: block;
+    max-height: 44px;
+    max-width: 206px;
 }
 
 ::-webkit-scrollbar-track {
