@@ -10,7 +10,7 @@ function NavItem({ icon, text }) {
 
       {/* Text */}
       <div className="item-text-container align-middle inline-block overflow-hidden">
-        <span className="item-text text-lg font-bold inline-block">
+        <span className="text-lg font-bold inline-block">
           {text}
         </span>
       </div>

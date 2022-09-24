@@ -2,6 +2,7 @@
 
 $logo-icon-width: 56px;
 $logo-width: 244px;
+$separator-margin: 14px;
 
 .navbar {
     background-color: $main-color;
@@ -15,6 +16,11 @@ $logo-width: 244px;
         width: $logo-width;
         transition: width 300ms ease-in;
     }
+
+    .separator {
+        width: calc($navbar-width-expanded - ($separator-margin * 2));
+        transition: width 300ms ease-in;
+    }
 }
 
 .navbar:not(:hover) {
@@ -25,21 +31,33 @@ $logo-width: 244px;
         width: $logo-icon-width;
         transition: width 300ms ease-in;
     }
-}
 
-.item-container {
-    height: calc(100vh - 5.5rem + 1px);
+    .separator {
+        transition: width 300ms ease-in;
+    }
 }
 
 .logo-container {
     width: $logo-icon-width;
-    margin-left: calc(($navbar-width - $logo-icon-width)/2);
+    margin: 20px 0 20px calc(($navbar-width - $logo-icon-width)/2);
 }
 
 .logo {
     display: block;
     max-height: 44px;
     max-width: 206px;
+}
+
+.separator {
+    border-bottom: 2px solid $navbar-separator-color;
+    border-radius: 8px;
+    margin: 0 $separator-margin;
+    width: calc($navbar-width - ($separator-margin * 2));
+}
+
+.item-container {
+    height: calc(100vh - 5.5rem + 1px);
+    margin-top: 20px;
 }
 
 ::-webkit-scrollbar-track {

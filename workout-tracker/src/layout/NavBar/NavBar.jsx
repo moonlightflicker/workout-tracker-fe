@@ -10,13 +10,16 @@ import plansIcon from '../../assets/icons/plans.svg';
 function NavBar() {
   return (
     <nav className="navbar fixed h-full group duration-300 overflow-hidden">
-      <div className="logo-container flex-row justify-center mt-5 mb-10 h-11 overflow-hidden">
+      <div className="logo-container flex-row justify-center h-11 overflow-hidden">
         <img
           alt="Logo"
           src={logo}
           className="logo min-w-max"
         />
       </div>
+
+      <div className="separator" />
+
       <div className="item-container overflow-scroll custom-scrollbar">
         <NavItem icon={dashboardIcon} text="Dashboard" selected />
         <NavItem icon={workoutsIcon} text="Workouts" selected={false} />
