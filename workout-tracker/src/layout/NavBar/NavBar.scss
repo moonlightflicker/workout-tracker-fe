@@ -17,6 +17,16 @@ $logo-width: 244px;
     }
 }
 
+.navbar:not(:hover) {
+    width: $navbar-width;
+    transition-delay: 300ms;
+
+    .logo-container {
+        width: $logo-icon-width;
+        transition: width 300ms ease-in;
+    }
+}
+
 .item-container {
     height: calc(100vh - 5.5rem + 1px);
 }

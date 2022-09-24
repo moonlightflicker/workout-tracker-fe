@@ -1,0 +1,25 @@
+@import '../../../utils/Constants.scss';
+
+$icon-width: 32px;
+$icon-height: 32px;
+
+.icon {
+    width: $icon-width;
+    height: $icon-height;
+    margin-left: calc( (($navbar-width - $icon-width)/2) - 2px);
+    margin-right: 12px;
+}
+
+.item-text-container {
+    width: 0;
+}
+
+.navbar:hover .item-text-container {
+    width: 100%;
+    transition: width 500ms ease-in;
+}
+
+.navbar:not(:hover) .item-text-container {
+    width: 0;
+    transition: width 300ms ease-out;
+}

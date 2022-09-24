@@ -1,14 +1,20 @@
 import PropTypes from 'prop-types';
+import './NavItem.scss';
 
 function NavItem({ icon, text }) {
   return (
-    <div className="flex flex-row mb-2.5">
-      <div className="flex-col justify-center w-16">
-        <img className="w-6" alt={`${text} icon`} src={icon} />
+    <div className="block mb-2.5 whitespace-nowrap">
+
+      {/* Icon */}
+      <img className="icon inline-block" alt={`${text} icon`} src={icon} />
+
+      {/* Text */}
+      <div className="item-text-container align-middle inline-block overflow-hidden">
+        <span className="item-text text-lg font-bold inline-block">
+          {text}
+        </span>
       </div>
-      <div className="flex-col justify-start">
-        <p className="text-lg font-bold hidden group-hover:block">{text}</p>
-      </div>
+
     </div>
   );
 }
