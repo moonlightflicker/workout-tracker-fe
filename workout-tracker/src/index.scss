@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './utils/Constants.scss';
+
 body {
     margin: 0;
-    background-color: #D1FAE5;
+    background-color: $secondary-color;
 }

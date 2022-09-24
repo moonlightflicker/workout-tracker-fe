@@ -1,10 +1,10 @@
-$navbar-width: 64px;
-$navbar-width-expanded: 256px;
+@import "../../utils/Constants.scss";
+
 $logo-icon-width: 44px;
 $logo-width: 206px;
 
 .navbar {
-    background-color: #FBBF24;
+    background-color: $main-color;
     width: $navbar-width;
 }
 
