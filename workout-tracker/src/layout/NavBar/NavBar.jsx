@@ -17,7 +17,7 @@ function NavBar() {
           className="logo min-w-max"
         />
       </div>
-      <div className="item-container overflow-scroll custom-scrollbar w-full">
+      <div className="item-container overflow-scroll custom-scrollbar">
         <NavItem icon={dashboardIcon} text="Dashboard" selected />
         <NavItem icon={workoutsIcon} text="Workouts" selected={false} />
         <NavItem icon={exercisesIcon} text="Exercise database" selected={false} />
