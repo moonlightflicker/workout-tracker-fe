@@ -1,7 +1,7 @@
 @import "../../utils/Constants.scss";
 
-$logo-icon-width: 44px;
-$logo-width: 206px;
+$logo-icon-width: 56px;
+$logo-width: 244px;
 
 .navbar {
     background-color: $main-color;
@@ -12,7 +12,7 @@ $logo-width: 206px;
     width: $navbar-width-expanded;
 
     .logo-container {
-        width: 206px;
+        width: $logo-width;
         transition: width 300ms ease-in;
     }
 }
