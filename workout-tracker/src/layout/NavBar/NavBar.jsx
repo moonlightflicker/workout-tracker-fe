@@ -1,5 +1,6 @@
 import './NavBar.scss';
 import NavItem from './NavItem/NavItem';
+import Socials from './Socials/Socials';
 
 import logo from '../../assets/branding/logo.png';
 import dashboardIcon from '../../assets/icons/dashboard.svg';
@@ -10,7 +11,7 @@ import plansIcon from '../../assets/icons/plans.svg';
 function NavBar() {
   return (
     <nav className="navbar fixed h-full group duration-300 overflow-hidden">
-      <div className="logo-container flex-row justify-center h-11 overflow-hidden">
+      <div className="logo-container flex-row justify-center overflow-hidden">
         <img
           alt="Logo"
           src={logo}
@@ -20,13 +21,14 @@ function NavBar() {
 
       <div className="separator" />
 
-      <div className="item-container overflow-scroll custom-scrollbar">
+      <div className="item-container overflow-y-scroll overflow-x-hidden custom-scrollbar">
         <NavItem icon={dashboardIcon} text="Dashboard" selected />
         <NavItem icon={workoutsIcon} text="Workouts" selected={false} />
         <NavItem icon={exercisesIcon} text="Exercise database" selected={false} />
         <NavItem icon={plansIcon} text="Plans" selected={false} />
       </div>
-      {/* TODO: Implemente licensing and socials */}
+
+      <Socials className="socials" />
     </nav>
   );
 }

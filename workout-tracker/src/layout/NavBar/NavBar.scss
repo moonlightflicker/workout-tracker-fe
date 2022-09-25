@@ -2,7 +2,15 @@
 
 $logo-icon-width: 56px;
 $logo-width: 244px;
+$logo-height: 44px;
+$logo-margin-top: 20px;
+$logo-margin-bottom: 20px;
 $separator-margin: 14px;
+$separator-height: 2px;
+$socials-height: 75px;
+$item-container-margin-top: 20px;
+$item-container-height: calc(100vh - $logo-height - $logo-margin-top - $logo-margin-bottom
+                        - $item-container-margin-top - $socials-height - $separator-height - 1px);
 
 .navbar {
     background-color: $main-color;
@@ -39,25 +47,29 @@ $separator-margin: 14px;
 
 .logo-container {
     width: $logo-icon-width;
-    margin: 20px 0 20px calc(($navbar-width - $logo-icon-width)/2);
+    margin: $logo-margin-top 0 $logo-margin-bottom calc(($navbar-width - $logo-icon-width)/2);
 }
 
 .logo {
     display: block;
-    max-height: 44px;
-    max-width: 206px;
+    max-height: $logo-height;
+    max-width: $logo-width;
 }
 
 .separator {
-    border-bottom: 2px solid $navbar-separator-color;
-    border-radius: 8px;
+    border-bottom: $separator-height solid $navbar-separator-color;
+    border-radius: 8px; //FIXME: Leaving trail when navbar scrollbar active
     margin: 0 $separator-margin;
     width: calc($navbar-width - ($separator-margin * 2));
 }
 
 .item-container {
-    height: calc(100vh - 5.5rem + 1px);
-    margin-top: 20px;
+    height: $item-container-height;
+    margin-top: $item-container-margin-top;
+}
+
+.socials {
+    height: $socials-height;
 }
 
 ::-webkit-scrollbar-track {
@@ -65,7 +77,7 @@ $separator-margin: 14px;
 }
 
 ::-webkit-scrollbar {
-    width: .3125rem;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
