@@ -2,24 +2,40 @@
 
 $icon-width: 32px;
 $icon-height: 32px;
+$item-margin-left: calc( (($navbar-width - $icon-width)/2) - 2px);
+$selected-item-highlight-width: 5px;
+
+.nav-item-container {
+    padding: 5px 0;
+}
+
+.selected-item {
+    border-left: $selected-item-highlight-width solid $highlight-color;
+}
 
 .icon {
     width: $icon-width;
     height: $icon-height;
-    margin-left: calc( (($navbar-width - $icon-width)/2) - 2px);
+    margin-left: $item-margin-left;
     margin-right: 12px;
 }
 
-.item-text-container {
+.selected-item-icon {
+    margin-left: calc( $item-margin-left - $selected-item-highlight-width);;
+}
+
+.nav-item-text-container {
     width: 0;
 }
 
-.navbar:hover .item-text-container {
-    width: 100%;
-    transition: width 500ms ease-in;
+.navbar:hover {
+    .nav-item-text-container {
+        width: 100%;
+        transition: width 500ms ease-in;
+    }
 }
 
-.navbar:not(:hover) .item-text-container {
+.navbar:not(:hover) .nav-item-text-container {
     width: 0;
     transition: width 300ms ease-out;
 }

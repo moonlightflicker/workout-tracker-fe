@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
 import './NavItem.scss';
 
-function NavItem({ icon, text }) {
+function NavItem({
+  icon, text, selected,
+}) {
   return (
-    <div className="block mb-2.5 whitespace-nowrap">
+    <div className={`nav-item-container whitespace-nowrap ${selected ? 'selected-item' : ''}`}>
 
       {/* Icon */}
-      <img className="icon inline-block" alt={`${text} icon`} src={icon} />
+      <img className={`icon inline-block ${selected ? 'selected-item-icon' : ''}`} alt={`${text} icon`} src={icon} />
 
       {/* Text */}
-      <div className="item-text-container align-middle inline-block overflow-hidden">
+      <div className="nav-item-text-container align-middle inline-block overflow-hidden">
         <span className="text-lg font-bold inline-block">
           {text}
         </span>
@@ -22,6 +24,7 @@ function NavItem({ icon, text }) {
 NavItem.propTypes = {
   icon: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  selected: PropTypes.bool.isRequired,
 };
 
 export default NavItem;
