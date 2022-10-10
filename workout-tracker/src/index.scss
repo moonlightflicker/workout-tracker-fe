@@ -7,4 +7,10 @@
 body {
     margin: 0;
     background-color: $secondary-color;
+    font-family: "Roboto";
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("RobotoRegular"), url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
