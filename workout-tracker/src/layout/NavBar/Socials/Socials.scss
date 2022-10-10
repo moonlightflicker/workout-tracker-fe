@@ -1,10 +1,27 @@
 @import '../../../utils/Constants.scss';
 
+$socials-line-margin-bottom: 5px;
+$socials-icon-width: 26px;
+$socials-icon-height: 26px;
+$socials-margin-top: 20px;
+$socials-margin-bottom: 10px;
+$socials-height: calc($socials-icon-height + $socials-icon-height + $socials-line-margin-bottom);
+
+.socials-container {
+    height: $socials-height;
+    margin: $socials-margin-top 0 $socials-margin-bottom;
+}
+
 .socials-line {
     width: $navbar-width;
+    height: $socials-icon-height;
 }
 
 .socials-icon {
-    height: 25px;
-    width: 25px;
+    width: $socials-icon-width;
+    height: $socials-icon-height;
+}
+
+.socials-line-margin-bottom {
+    margin-bottom: $socials-line-margin-bottom;
 }

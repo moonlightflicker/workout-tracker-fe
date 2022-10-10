@@ -1,4 +1,5 @@
 @import "../../utils/Constants.scss";
+@import "./Socials/Socials.scss";
 
 $logo-icon-width: 56px;
 $logo-width: 244px;
@@ -7,10 +8,10 @@ $logo-margin-top: 20px;
 $logo-margin-bottom: 20px;
 $separator-margin: 14px;
 $separator-height: 2px;
-$socials-height: 75px;
 $item-container-margin-top: 20px;
 $item-container-height: calc(100vh - $logo-height - $logo-margin-top - $logo-margin-bottom
-                        - $item-container-margin-top - $socials-height - $separator-height - 1px);
+                        - $item-container-margin-top - $socials-height - $socials-margin-top - $socials-margin-bottom
+                        - $separator-height - $separator-height - 1px);
 
 .navbar {
     background-color: $main-color;
@@ -66,10 +67,6 @@ $item-container-height: calc(100vh - $logo-height - $logo-margin-top - $logo-mar
 .item-container {
     height: $item-container-height;
     margin-top: $item-container-margin-top;
-}
-
-.socials {
-    height: $socials-height;
 }
 
 ::-webkit-scrollbar-track {

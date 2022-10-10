@@ -1,12 +1,13 @@
 @import '../../../utils/Constants.scss';
 
-$icon-width: 32px;
-$icon-height: 32px;
+$icon-width: 26px;
+$icon-height: 26px;
 $item-margin-left: calc( (($navbar-width - $icon-width)/2) - 2px);
-$selected-item-highlight-width: 5px;
+$selected-item-highlight-width: 4px;
 
 .nav-item-container {
-    padding: 5px 0;
+    padding: 4px 0;
+    margin-bottom: 1px;
 }
 
 .selected-item {
@@ -33,9 +34,21 @@ $selected-item-highlight-width: 5px;
         width: 100%;
         transition: width 500ms ease-in;
     }
+
+    .selected-item {
+        border-left: $selected-item-highlight-width solid $highlight-hover-color;
+        transition: border 300ms ease-out;
+    }
 }
 
-.navbar:not(:hover) .nav-item-text-container {
-    width: 0;
-    transition: width 300ms ease-out;
+.navbar:not(:hover) {
+    .nav-item-text-container {
+        width: 0;
+        transition: width 300ms ease-out;
+    }
+
+    .selected-item {
+        border-left: $selected-item-highlight-width solid $highlight-color;
+        transition: border 300ms ease-in;
+    }
 }

@@ -6,8 +6,8 @@ import gitHubLogoOutline from '../../../assets/icons/github_icon_outline.svg';
 
 function Socials() {
   return (
-    <div>
-      <div className="socials-line block text-center">
+    <div className="socials-container">
+      <div className="socials-line socials-line-margin-bottom block text-center">
         <img className="socials-icon inline-block mr-1" alt="Twitter icon" src={twitterLogoOutline} />
         <img className="socials-icon inline-block ml-1" alt="LinkedIn icon" src={linkedInLogoOutline} />
       </div>

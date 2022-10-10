@@ -28,7 +28,9 @@ function NavBar() {
         <NavItem icon={plansIcon} text="Plans" selected={false} />
       </div>
 
-      <Socials className="socials" />
+      <div className="separator" />
+
+      <Socials className="socials-container" />
     </nav>
   );
 }

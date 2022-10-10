@@ -12,7 +12,7 @@ function NavItem({
 
       {/* Text */}
       <div className="nav-item-text-container align-middle inline-block overflow-hidden">
-        <span className="text-lg font-bold inline-block">
+        <span className="inline-block leading-4">
           {text}
         </span>
       </div>
