@@ -26,6 +26,26 @@ function NavBar() {
         <NavItem icon={workoutsIcon} text="Workouts" selected={false} />
         <NavItem icon={exercisesIcon} text="Exercise database" selected={false} />
         <NavItem icon={plansIcon} text="Plans" selected={false} />
+        <NavItem icon={dashboardIcon} text="Dashboard" selected />
+        <NavItem icon={workoutsIcon} text="Workouts" selected={false} />
+        <NavItem icon={exercisesIcon} text="Exercise database" selected={false} />
+        <NavItem icon={plansIcon} text="Plans" selected={false} />
+        <NavItem icon={dashboardIcon} text="Dashboard" selected />
+        <NavItem icon={workoutsIcon} text="Workouts" selected={false} />
+        <NavItem icon={exercisesIcon} text="Exercise database" selected={false} />
+        <NavItem icon={plansIcon} text="Plans" selected={false} />
+        <NavItem icon={dashboardIcon} text="Dashboard" selected />
+        <NavItem icon={workoutsIcon} text="Workouts" selected={false} />
+        <NavItem icon={exercisesIcon} text="Exercise database" selected={false} />
+        <NavItem icon={plansIcon} text="Plans" selected={false} />
+        <NavItem icon={dashboardIcon} text="Dashboard" selected />
+        <NavItem icon={workoutsIcon} text="Workouts" selected={false} />
+        <NavItem icon={exercisesIcon} text="Exercise database" selected={false} />
+        <NavItem icon={plansIcon} text="Plans" selected={false} />
+        <NavItem icon={dashboardIcon} text="Dashboard" selected />
+        <NavItem icon={workoutsIcon} text="Workouts" selected={false} />
+        <NavItem icon={exercisesIcon} text="Exercise database" selected={false} />
+        <NavItem icon={plansIcon} text="Plans" selected={false} />
       </div>
 
       <div className="separator" />

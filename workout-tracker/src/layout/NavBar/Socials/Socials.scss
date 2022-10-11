@@ -6,15 +6,15 @@ $socials-icon-height: 26px;
 $socials-margin-top: 20px;
 $socials-margin-bottom: 10px;
 $socials-height: calc($socials-icon-height + $socials-icon-height + $socials-line-margin-bottom);
+$signature-left-margin: 15px;
 
 .socials-container {
     height: $socials-height;
     margin: $socials-margin-top 0 $socials-margin-bottom;
 }
 
-.socials-line {
-    width: $navbar-width;
-    height: $socials-icon-height;
+.socials-col {
+    min-width: $navbar-width;
 }
 
 .socials-icon {
@@ -22,6 +22,30 @@ $socials-height: calc($socials-icon-height + $socials-icon-height + $socials-lin
     height: $socials-icon-height;
 }
 
-.socials-line-margin-bottom {
+.socials-row-margin-bottom {
     margin-bottom: $socials-line-margin-bottom;
+}
+
+.signature-col {
+    margin-left: $signature-left-margin;
+    min-width: calc($navbar-width-expanded - $navbar-width - $signature-left-margin);
+}
+
+.signature-row {
+    width: 0;
+    height: $socials-icon-height;
+}
+
+.navbar:hover {
+    .signature-row {
+        width: 100%;
+        transition: width 500ms ease-in;
+    }
+}
+
+.navbar:not(:hover) {
+    .signature-row {
+        width: 0;
+        transition: width 300ms ease-out;
+    }
 }

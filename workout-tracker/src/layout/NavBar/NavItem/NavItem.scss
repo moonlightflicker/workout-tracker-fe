@@ -39,6 +39,11 @@ $selected-item-highlight-width: 4px;
         border-left: $selected-item-highlight-width solid $highlight-hover-color;
         transition: border 300ms ease-out;
     }
+
+    // .icon {
+    //     filter: invert(22%) sepia(90%) saturate(5942%) hue-rotate(223deg) brightness(102%) contrast(105%);
+    //     transition: filter 300ms ease-out;
+    // }
 }
 
 .navbar:not(:hover) {
@@ -51,4 +56,9 @@ $selected-item-highlight-width: 4px;
         border-left: $selected-item-highlight-width solid $highlight-color;
         transition: border 300ms ease-in;
     }
+
+    // .icon {
+    //     filter: invert(0) sepia(90%) saturate(5942%) hue-rotate(223deg) brightness(102%) contrast(105%);
+    //     transition: filter 300ms ease-out;
+    // }
 }
