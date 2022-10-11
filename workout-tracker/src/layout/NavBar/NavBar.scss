@@ -74,10 +74,11 @@ $item-container-height: calc(100vh - $logo-height - $logo-margin-top - $logo-mar
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: .5rem;
-    background-color: black;
+    background-color: $scrollbar-color;
 }
+ 
