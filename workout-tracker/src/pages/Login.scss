@@ -1,0 +1,31 @@
+@import '/src//utils/Constants.scss';
+
+.login-card {
+    height: 60vh;
+    //width: 30vw;
+    background-color: $main-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    box-shadow: 5px 5px;
+}
+
+@media (min-width: $min-width-desktop) {
+    .login-card {
+        width: 31.25rem;
+    }
+}
+
+@media (min-width: $min-width-tablet) and (max-width: $max-width-tablet) {
+    .login-card {
+        border: 1px solid green;
+    }
+}
+
+@media (max-width: $max-width-phone) {
+    .login-card {
+        border: 1px solid blue;
+    }
+}

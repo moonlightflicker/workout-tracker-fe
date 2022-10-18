@@ -1,7 +1,11 @@
+import './Login.scss';
+
 function Login() {
   return (
     <div>
-      Login
+      <div className="login-card overflow-hidden">
+        Login
+      </div>
     </div>
   );
 }
