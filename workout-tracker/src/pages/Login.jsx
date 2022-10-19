@@ -1,5 +1,6 @@
 import './Login.scss';
 import backgroundImage from '../assets/backgrounds/login_background.jpg';
+import logo from '../assets/branding/logo.png';
 
 function Login() {
   return (
@@ -14,7 +15,7 @@ function Login() {
 
         {/* Login form */}
         <div className="login-side float-right h-full">
-          Login
+          <img alt="Logo" src={logo} />
         </div>
 
       </div>
