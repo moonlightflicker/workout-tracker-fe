@@ -4,7 +4,7 @@ import logo from '../assets/branding/logo.png';
 
 function Login() {
   return (
-    <div className="w-screen">
+    <div className="login-page w-screen h-screen flex flex-col justify-center items-center">
 
       <div className="login-card overflow-hidden">
 
@@ -14,8 +14,17 @@ function Login() {
         </div>
 
         {/* Login form */}
-        <div className="login-side float-right h-full">
-          <img alt="Logo" src={logo} />
+        <div className="login-side float-right h-full overflow-x-hidden overflow-y-scroll">
+
+          {/* Logo */}
+          <div className="flex flex-row justify-center">
+            <img className="logo" alt="Logo" src={logo} />
+          </div>
+
+          {/* Welcome message */}
+          <div className="flex flex-row justify-center">
+            <span className="font-semibold">Welcome to the Workout Tracker!</span>
+          </div>
         </div>
 
       </div>

@@ -8,57 +8,57 @@ $selected-item-highlight-width: 4px;
 .nav-item-container {
     padding: 4px 0;
     margin-bottom: 1px;
-}
-
-.selected-item {
-    border-left: $selected-item-highlight-width solid $highlight-color;
-}
-
-.icon {
-    width: $icon-width;
-    height: $icon-height;
-    margin-left: $item-margin-left;
-    margin-right: 12px;
-}
-
-.selected-item-icon {
-    margin-left: calc( $item-margin-left - $selected-item-highlight-width);;
-}
-
-.nav-item-text-container {
-    width: 0;
-}
-
-.navbar:hover {
-    .nav-item-text-container {
-        width: 100%;
-        transition: width 500ms ease-in;
-    }
-
-    .selected-item {
-        border-left: $selected-item-highlight-width solid $highlight-hover-color;
-        transition: border 300ms ease-out;
-    }
-
-    // .icon {
-    //     filter: invert(22%) sepia(90%) saturate(5942%) hue-rotate(223deg) brightness(102%) contrast(105%);
-    //     transition: filter 300ms ease-out;
-    // }
-}
-
-.navbar:not(:hover) {
-    .nav-item-text-container {
-        width: 0;
-        transition: width 300ms ease-out;
-    }
 
     .selected-item {
         border-left: $selected-item-highlight-width solid $highlight-color;
-        transition: border 300ms ease-in;
     }
-
-    // .icon {
-    //     filter: invert(0) sepia(90%) saturate(5942%) hue-rotate(223deg) brightness(102%) contrast(105%);
-    //     transition: filter 300ms ease-out;
-    // }
+    
+    .icon {
+        width: $icon-width;
+        height: $icon-height;
+        margin-left: $item-margin-left;
+        margin-right: 12px;
+    }
+    
+    .selected-item-icon {
+        margin-left: calc( $item-margin-left - $selected-item-highlight-width);;
+    }
+    
+    .nav-item-text-container {
+        width: 0;
+    }
+    
+    .navbar:hover {
+        .nav-item-text-container {
+            width: 100%;
+            transition: width 500ms ease-in;
+        }
+    
+        .selected-item {
+            border-left: $selected-item-highlight-width solid $highlight-hover-color;
+            transition: border 300ms ease-out;
+        }
+    
+        // .icon {
+        //     filter: invert(22%) sepia(90%) saturate(5942%) hue-rotate(223deg) brightness(102%) contrast(105%);
+        //     transition: filter 300ms ease-out;
+        // }
+    }
+    
+    .navbar:not(:hover) {
+        .nav-item-text-container {
+            width: 0;
+            transition: width 300ms ease-out;
+        }
+    
+        .selected-item {
+            border-left: $selected-item-highlight-width solid $highlight-color;
+            transition: border 300ms ease-in;
+        }
+    
+        // .icon {
+        //     filter: invert(0) sepia(90%) saturate(5942%) hue-rotate(223deg) brightness(102%) contrast(105%);
+        //     transition: filter 300ms ease-out;
+        // }
+    }
 }

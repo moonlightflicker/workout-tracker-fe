@@ -1,5 +1,7 @@
 @import "../utils/Constants.scss";
 
-.app-content {
-    margin-left: $navbar-width;
+.main-page {
+    .app-content {
+        margin-left: $navbar-width;
+    }
 }

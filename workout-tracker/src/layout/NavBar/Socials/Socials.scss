@@ -11,41 +11,41 @@ $signature-left-margin: 15px;
 .socials-container {
     height: $socials-height;
     margin: $socials-margin-top 0 $socials-margin-bottom;
-}
 
-.socials-col {
-    min-width: $navbar-width;
-}
-
-.socials-icon {
-    width: $socials-icon-width;
-    height: $socials-icon-height;
-}
-
-.socials-row-margin-bottom {
-    margin-bottom: $socials-line-margin-bottom;
-}
-
-.signature-col {
-    margin-left: $signature-left-margin;
-    min-width: calc($navbar-width-expanded - $navbar-width - $signature-left-margin);
-}
-
-.signature-row {
-    width: 0;
-    height: $socials-icon-height;
-}
-
-.navbar:hover {
-    .signature-row {
-        width: 100%;
-        transition: width 500ms ease-in;
+    .socials-col {
+        min-width: $navbar-width;
     }
-}
-
-.navbar:not(:hover) {
+    
+    .socials-icon {
+        width: $socials-icon-width;
+        height: $socials-icon-height;
+    }
+    
+    .socials-row-margin-bottom {
+        margin-bottom: $socials-line-margin-bottom;
+    }
+    
+    .signature-col {
+        margin-left: $signature-left-margin;
+        min-width: calc($navbar-width-expanded - $navbar-width - $signature-left-margin);
+    }
+    
     .signature-row {
         width: 0;
-        transition: width 300ms ease-out;
+        height: $socials-icon-height;
+    }
+    
+    .navbar:hover {
+        .signature-row {
+            width: 100%;
+            transition: width 500ms ease-in;
+        }
+    }
+    
+    .navbar:not(:hover) {
+        .signature-row {
+            width: 0;
+            transition: width 300ms ease-out;
+        }
     }
 }

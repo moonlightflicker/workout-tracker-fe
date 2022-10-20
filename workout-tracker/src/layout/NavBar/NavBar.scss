@@ -16,6 +16,42 @@ $item-container-height: calc(100vh - $logo-height - $logo-margin-top - $logo-mar
 .navbar {
     background-color: $main-color;
     width: $navbar-width;
+
+    .logo-container {
+        width: $logo-icon-width;
+        margin: $logo-margin-top 0 $logo-margin-bottom calc(($navbar-width - $logo-icon-width)/2);
+    }
+    
+    .logo {
+        display: block;
+        max-height: $logo-height;
+        max-width: $logo-width;
+    }
+    
+    .separator {
+        border-bottom: $separator-height solid $navbar-separator-color;
+        border-radius: 8px; //FIXME: Leaving trail when navbar scrollbar active
+        margin: 0 $separator-margin;
+        width: calc($navbar-width - ($separator-margin * 2));
+    }
+    
+    .item-container {
+        height: $item-container-height;
+        margin-top: $item-container-margin-top;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 2px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: .5rem;
+        background-color: $scrollbar-color;
+    }
 }
 
 .navbar:hover {
@@ -45,40 +81,3 @@ $item-container-height: calc(100vh - $logo-height - $logo-margin-top - $logo-mar
         transition: width 300ms ease-in;
     }
 }
-
-.logo-container {
-    width: $logo-icon-width;
-    margin: $logo-margin-top 0 $logo-margin-bottom calc(($navbar-width - $logo-icon-width)/2);
-}
-
-.logo {
-    display: block;
-    max-height: $logo-height;
-    max-width: $logo-width;
-}
-
-.separator {
-    border-bottom: $separator-height solid $navbar-separator-color;
-    border-radius: 8px; //FIXME: Leaving trail when navbar scrollbar active
-    margin: 0 $separator-margin;
-    width: calc($navbar-width - ($separator-margin * 2));
-}
-
-.item-container {
-    height: $item-container-height;
-    margin-top: $item-container-margin-top;
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-::-webkit-scrollbar {
-    width: 2px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: .5rem;
-    background-color: $scrollbar-color;
-}
- 
